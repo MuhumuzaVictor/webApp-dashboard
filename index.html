@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Drop down sidebar menu</title>
+        <link rel="stylesheet" href="style.css">
+       
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="sidebar ">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <span class="logo-name">DzyVikta</span>
+                </div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-collection' ></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li> <a class="link_name" href="#">Category</a></li>
+                    <li> <a href="#">HTML & CSS</a></li>
+                    <li> <a href="#">Javascript</a></li>
+                    <li> <a href="#">PHP</a></li>
+                </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt' ></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li> <a class="link_name" href="#">Posts</a></li>
+                    <li> <a href="#">Web design</a></li>
+                    <li> <a href="#">Card design</a></li>
+                    <li> <a href="#">Graphics design</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2' ></i>
+                        <span class="link_name">Analytics</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#">
+                        <i class='bx bx-history' ></i>
+                        <span class="link_name">History</span>
+                    </a>
+                    
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class='bx bx-log-out'></i>
+                        <span class="link_name">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+           
+
+            <div class="main-content">
+                <div class="header-wrapper">
+                    <div class="header-title">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div class="search">
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-btn" type="submit"><i class='bx bx-search-alt-2'></i></button>
+                        </form>
+                    </div>
+                    <div class="profile">
+                        <i class='bx bx-user'></i>
+                        <span class="profile-name">Dzy</span>
+                    </div> 
+                </div>
+
+                <div class="page-title"><i class='bx bx-grid-alt'></i>Dashboard</div>
+
+                <div class="card-container">
+                    <h3 class="main-title">Today's data</h3>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="amount">
+                                    <span class="title">payment amount</span>
+                                    <span class="amount-value">$100</span>
+                                </div>
+                                <i class='bx bx-dollar' ></i>
+                            </div>
+                            <span class="card-details">*** *** *** 3848</span>
+                        </div>
+                        <div class="card light-red">
+                            <div class="card-header">
+                                <div class="amount">
+                                    <span class="title">payment amount</span>
+                                    <span class="amount-value">$500</span>
+                                </div>
+                                <i class='bx bx-dollar' ></i>
+                            </div>
+                            <span class="card-details">*** *** *** 5647</span>
+                        </div>
+                        <div class="card light-red">
+                            <div class="card-header">
+                                <div class="amount">
+                                    <span class="title">payment amount</span>
+                                    <span class="amount-value">$500</span>
+                                </div>
+                                <i class='bx bx-dollar' ></i>
+                            </div>
+                            <span class="card-details">*** *** *** 5647</span>
+                        </div>
+                        <div class="card light-red">
+                            <div class="card-header">
+                                <div class="amount">
+                                    <span class="title">payment amount</span>
+                                    <span class="amount-value">$500</span>
+                                </div>
+                                <i class='bx bx-dollar' ></i>
+                            </div>
+                            <span class="card-details">*** *** *** 5647</span>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="tabular-wrapper">
+                    <h3 class="main-title">Finance data</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Transacton type</th>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>2023-05-01</td>
+                                        <td>Expenses</td>
+                                        <td>office supplies</td>
+                                        <td>$250</td>
+                                        <td>Office expenses</td>
+                                        <td>Pending</td>
+                                        <td><button>Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-05-01</td>
+                                        <td>Expenses</td>
+                                        <td>office supplies</td>
+                                        <td>$250</td>
+                                        <td>Office expenses</td>
+                                        <td>Pending</td>
+                                        <td><button>Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-05-01</td>
+                                        <td>Expenses</td>
+                                        <td>office supplies</td>
+                                        <td>$250</td>
+                                        <td>Office expenses</td>
+                                        <td>Pending</td>
+                                        <td><button>Edit</button></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="7">Total: $1,000</td>
+                                    </tr>
+                                </tfoot>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                let arrow = document.querySelectorAll(".arrow");
+                console.log(arrow);
+                for (var i = 0; i < arrow.length; i++) {
+                   arrow[i].addEventListener("click",(e)=>{
+                    
+                    let arrowParent = e.target.parentElement.parentElement;
+                    console.log(arrowParent);
+                    arrowParent.classList.toggle("showMenu");
+                   }); 
+                }
+    
+                let sidebar = document.querySelector(".sidebar");
+                let sidebarBtn = document.querySelector(".bx-menu");
+                sidebarBtn.addEventListener("click", () => {
+                    sidebar.classList.toggle("close");
+                });
+                console.log(sidebar);
+            </script>
+    </body>
+</html>
